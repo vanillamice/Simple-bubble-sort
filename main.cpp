@@ -17,7 +17,7 @@ we start at arr[1] and compare it to arr[1-1] till we reach arr[n] and arr[n-1]
 
 void bubblesort(int arr[], int n)
 {
-    for (int breakcount = 0; breakcount < 5*5; breakcount++) {
+    for (int breakcount = 0; breakcount < n*n; breakcount++) {
         for (int i = 1; i < n; i++) {
             if (arr[i - 1] > arr[i]) {
                 swap(&arr[i], &arr[i - 1]);
